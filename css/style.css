@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: linear-gradient(to right, #29b6f6, #2ebf91);
+    padding: 5px;
+    color: white;
+}
+
+img {
+    border-radius: 80px 10px 80px 10px;
+}
+
+.ml-1 {
+    margin-left: 1em;
+}
+
+.mt-20 {
+    margin-top: 2em;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 80%;
+    border-radius: 8px;
+    margin: 16px;
+    background: #F8F9FA;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 50px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0 0 3vh;
+    width: 50%;
+
+}
+
+.item>.inner h2 {
+    margin-bottom: unset;
+    margin-top: 6px;
+    font-size: 23pt;
+}
+
+.item>.inner p {
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.inner>small {
+    font-size: 1em;
+    line-height: 0;
+}
+
+.item>button {
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px auto;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+    text-transform: capitalize;
+}
+
+.form-group label {
+    margin-bottom: 0.4em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.shadow {
+    box-shadow: 0 15px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+input[type=text],
+input[type=number] {
+    background-color: #c2ffe0;
+    border: 2px solid #2ebf91;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form[class="form"] .form-group input[type=text] {
+    margin-bottom: 0.5em;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    text-transform: lowercase;
+}
+
+.btn-cancel {
+    width: fit-content;
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    margin-right: 1em;
+    padding: 12px 35px;
+    border: 2px solid #2ebf91;
+    color: #2ebf91;
+    font-size: 21px;
+    margin-top: 10px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #2ebf91;
+    color: #fff;
+    border: 2px solid #2ebf91;
+}
+
+.btn-submit {
+    width: fit-content;
+    background-color: #2ebf91;
+    border-radius: 16px;
+    padding: 12px 35px;
+    border: 2px solid #2ebf91;
+    color: #fff;
+    font-size: 21px;
+    margin-top: 2em;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #2ebf91;
+    border: 2px solid #2ebf91;
+}
+
+.btn-update {
+    width: fit-content;
+    background-color: #2ebf91;
+    border: none;
+    border-radius: 16px;
+    padding: 12px 35px;
+    border: 2px solid #2ebf91;
+    color: #fff;
+    font-size: 21px;
+    margin-top: 10px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-update:hover {
+    background-color: #fff;
+    color: #2ebf91;
+    border: 2px solid #2ebf91;
+}
+
+.btn-search {
+    width: fit-content;
+    background-color: #2AB8E2;
+    border-radius: 16px;
+    padding: 12px 35px;
+    border: 2px solid #2AB8E2;
+    color: #fff;
+    margin-left: 0.5em;
+    font-size: 21px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: #fff;
+    color: #2AB8E2;
+    border: 2px solid #2AB8E2;
+}
+
+input[type=text],
+input[type=number],
+.btn-submit:focus {
+    outline: none;
+}
+
+.flx-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.flx-center {
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.check-button {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.check-button:hover {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/check-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trash-button {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.trash-button:hover {
+    background: url('../assets/icons/trash-fill.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.edit-button {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/edit-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.edit-button:hover {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/edit-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.undo-button {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.undo-button:hover {
+    display: flex;
+    justify-content: center;
+    background: url('../assets/icons/undo-ouline.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+footer {
+    position: static;
+    width: 100%;
+    padding-bottom: 8px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper>.container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .search-section {
+        width: 100%;
+    }
+
+}

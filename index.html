@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf - Save book notes anytime</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="ml-1">Bookshelf Apps</h1>
+    </header>
+
+    <!-- content -->
+    <div class="wrapper">
+        <!-- form input data -->
+        <div class="container bg-white shadow">
+            <form class="form" id="form-input-data">
+                <div class="form-group">
+                    <label for="image">cover</label>
+                    <input type="text" id="image" name="image"
+                        placeholder="please enter url image (e.g. www.example.com/made-in-abyss-cover.jpg)" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">title</label>
+                    <input type="text" id="title" name="title" placeholder="please enter title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">writer</label>
+                    <input type="text" id="author" name="author" placeholder="please enter writer" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">publication year</label>
+                    <input type="number" placeholder="please enter publication year" id="year" name="year" required>
+                </div>
+                <input type="submit" value="Submit" name="submit" class="btn-submit" id="submit">
+                <div class="flx-end mt-20">
+                    <span class="btn-cancel" id="cancel" hidden>Cancel</span>
+                    <span class="btn-update" id="update" hidden>Update</span>
+                </div>
+            </form>
+        </div>
+
+        <!-- form search data -->
+        <div class="container flex-row">
+            <div class="container bg-white shadow">
+                <form class="flx-center" id="form-search-data">
+                    <input type="text" id="book-title" placeholder="what is the book title you search for?" size="50">
+                    <input type="submit" class="btn-search" value="Search" id="search">
+                </form>
+            </div>
+        </div>
+
+        <!-- belum selesai dibaca -->
+        <div class="container">
+            <h2 class="container-header">Not Finished Read</h2>
+            <div class="list-item" id="buku">
+
+            </div>
+        </div>
+
+        <!-- selesai dibaca -->
+        <div class="container">
+            <h2 class="container-header">Finished Read</h2>
+            <div class="list-item" id="completed-buku">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h4 style="text-align:center;">Copyright &copy; 2022 - M Fathurrohman Mauludin</h4>
+    </footer>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
